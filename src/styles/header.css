@@ -1,0 +1,97 @@
+/* Global Variables */
+:root {
+    --maingreen: #7cf03d;
+    --background: #1f242d;
+    --text-color: #ffffff;
+    --hover-color: #58c623;
+}
+
+/* Body Styling */
+body {
+    background-color: var(--background);
+    color: var(--text-color);
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Navbar Background */
+.navbar-bg {
+    width: 100%;
+    padding: 10px 0;
+    background-color: var(--background);
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1350px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.navbar span{
+    color: var(--optional);
+}
+
+.brand {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+/* Navigation Links */
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    display: inline-flex;
+    padding: 8px;
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 5px;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: var(--hover-color);
+}
+
+/* Mobile View */
+.menu-icon {
+    display: none;
+    color: var(--maingreen);
+    font-size: 24px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Hide links by default */
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        flex-direction: column;
+        gap: 10px;
+        background-color: var(--background);
+        padding: 15px;
+        border-radius: 5px;
+        z-index: 100;
+    }
+
+    .nav-links.active {
+        display: flex; /* Show menu when active */
+    }
+
+    .menu-icon {
+        display: inline-block; /* Show menu icon */
+    }
+}
+
+

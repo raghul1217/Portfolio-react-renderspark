@@ -1,0 +1,186 @@
+$background-color: rgb(12,19,30);
+$lg1: rgb(0, 255, 195);
+$lg2: rgb(0, 140, 255);
+$card: rgb(31,41,54);
+
+body {
+    background-color: $background-color;
+    padding: 0px 80px;
+}
+
+.home-container {
+    background-color: $background-color;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+
+    // navbar
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 0;
+
+        .brand {
+            font-size: 24px;
+            font-weight: 500;
+        }
+
+        .menu-icon {
+            display: none;
+            cursor: pointer;
+        }
+
+        .nav-contents {
+            display: flex;
+            gap: 50px;
+
+            ul {
+                display: flex;
+                gap: 30px;
+                list-style: none;
+            }
+
+            a {
+                text-decoration: none;
+                color: white;
+                font-weight: 500;
+            }
+
+            .nav-btn {
+                .nav-connect-btn {
+                    padding: 7px 16px;
+                    background: linear-gradient(180deg, $lg1, $lg2);
+                    border: none;
+                    border-radius: 3px;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        // Toggle menu on mobile
+        .nav-contents.open {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            position: absolute;
+            top: 60px;
+            right: 0;
+            background-color: $background-color;
+            width: 100%;
+            padding: 20px;
+            z-index: 1;
+        }
+    }
+
+    // home content
+    .home-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 80vh;
+
+        .home-left {
+            flex: 1;
+            padding: 20px;
+
+            h1 {
+                font-size: 36px;
+            }
+
+            h5 {
+                font-size: 18px;
+                color: $lg1;
+            }
+
+            p {
+                width: 85%;
+                padding-bottom: 16px;
+            }
+
+            .home-buttons {
+                display: flex;
+                align-items: center;
+                gap: 25px;
+
+                .contact-icons {
+                    display: flex;
+                    gap: 16px;
+
+                    .icon {
+                        background: linear-gradient(180deg, $lg1, $lg2);
+                        width: 40px;
+                        height: 40px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 50%;
+                    }
+
+                    a {
+                        color: $background-color;
+                    }
+                }
+
+                .download-btn {
+                    padding: 10px 20px;
+                    background: linear-gradient(180deg, $lg1, $lg2);
+                    border: none;
+                    border-radius: 3px;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .home-img-div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .profile1 {
+                border-radius: 50%;
+                width: 300px;
+                height: 300px;
+            }
+        }
+    }
+}
+
+// Media Queries for Mobile
+@media (max-width: 768px) {
+    body {
+        padding: 0 20px;
+    }
+
+    .navbar {
+        .menu-icon {
+            display: block;
+        }
+
+        .nav-contents {
+            display: none; /* Hide the nav by default */
+        }
+    }
+
+    .home-content {
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+
+        .home-img-div {
+            order: 1; /* Show the profile first on mobile */
+        }
+
+        .home-left {
+            order: 2;
+            width: 100%;
+        }
+
+        h1 {
+            font-size: 30px;
+        }
+
+        h5 {
+            font-size: 16px;
+        }
+    }
+}
