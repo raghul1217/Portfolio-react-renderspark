@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import '../Styles/skills.css';
-import Home1 from '../pages/Home1';
+import '../styles/skills.css';
 
 const Skills = () => {
     const skillsData = {
