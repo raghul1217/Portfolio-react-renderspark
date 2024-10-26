@@ -1,0 +1,170 @@
+:root {
+    --bg-color: #1f242d;
+    --highlight-color: #10d809;
+    --text-color: #ffffff;
+    --bg2: #282c34;
+}
+
+body {
+    background-color: var(--bg-color);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.skills-section {
+    max-width: 1300px;
+    margin: 0 auto;
+    text-align: center;
+    color: var(--text-color);
+}
+
+.overall-heading {
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.overall-heading span {
+    color: var(--highlight-color);
+}
+
+/* Horizontal layout */
+.skills-container {
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+    padding: 20px;
+    gap: 130px;
+}
+
+/* Left-side buttons container */
+.skills-buttons-container {
+    flex: 1;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.skills-buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two buttons per row */
+    gap: 20px;
+    justify-items: center;
+    border: none;
+    outline: none;
+}
+
+.skills-buttons button {
+    color: var(--highlight-color);
+    font-size: 18px;
+    padding: 18px 45px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+    background: var(--bg2);
+    transition: 0.3s, color 0.3s, transform 0.3s;
+    box-shadow: 0px 4px 10px rgba(26, 28, 26, 0.4);
+    outline: none;
+    border: none;
+}
+
+.skills-buttons button:hover,
+.skills-buttons button.active {
+    background-color: var(--highlight-color);
+    color: var(--bg-color);
+    transform: scale(1.05);
+    box-shadow: 0px 8px 15px rgba(16, 216, 9, 0.6);
+}
+
+/* Right-side container for skills display */
+.skills-display-container {
+    flex: 2;
+    padding: 20px;
+    background-color: var(--bg2);
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(26, 28, 26, 0.4);
+}
+
+.skills-heading {
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+}
+
+.separator-line {
+    height: 1.5px;
+    background-color: var(--highlight-color);
+    margin: 10px 0;
+}
+
+.skills-display {
+    padding: 10px 0;
+}
+
+.skill {
+    margin-bottom: 15px;
+}
+
+.skill-title {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.progress-bar {
+    background-color: #333;
+    border-radius: 10px;
+    height: 10px;
+    overflow: hidden;
+}
+
+.progress-bar-fill {
+    height: 100%;
+    background-color: var(--highlight-color);
+    border-radius: 10px;
+    padding-right: 0;
+    color: transparent;
+}
+
+/* Responsive adjustments for mobile */
+@media (max-width: 768px) {
+    .skills-container {
+        flex-direction: column; /* Stack elements vertically */
+        gap: 20px;
+    }
+
+    .overall-heading {
+        font-size: 28px;
+        margin-bottom: 5px;
+        margin-top: 40px;
+    }
+
+    .skills-buttons {
+        grid-template-columns: repeat(2, 1fr); /* One button per row */
+    }
+
+    .skills-buttons button {
+        font-size: 16px;
+        padding: 12px 20px;
+    }
+
+    .skills-display-container {
+        padding: 15px;
+    }
+
+    .skills-heading {
+        font-size: 20px;
+    }
+
+    .skill-title {
+        font-size: 14px;
+    }
+
+    .progress-bar {
+        height: 8px;
+    }
+}

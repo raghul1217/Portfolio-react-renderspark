@@ -3,7 +3,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1350px;
+    max-width: 1300px;
     margin: 0 auto;
     padding: 20px;
     color: #ffffff;
@@ -195,6 +195,13 @@
 
     .home-left p {
         font-size: 14px;
+        margin-bottom: 20px;
+    }
+
+    .banner-icons{
+        font-size: 28px;
+        width: 22px;
+        height: 22px;
     }
 
     .download-btn {

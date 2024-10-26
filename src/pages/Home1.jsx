@@ -12,6 +12,7 @@ import profile2 from '../assets/profile2.png';
 import boxicons from "boxicons";
 import "boxicons/css/boxicons.min.css";
 import '../styles/home1.css';
+import Skills from "../components/Skills";
 
 const Home1 = () => {
 
@@ -70,7 +71,7 @@ const Home1 = () => {
             </div>
         </div>
         </div>
-
+        <Skills/>
         
     </>
   )
