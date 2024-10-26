@@ -85,6 +85,11 @@ body {
         z-index: 100;
     }
 
+    .brand{
+        font-size: 20px;
+        font-weight: 500;
+    }
+
     .nav-links.active {
         display: flex; /* Show menu when active */
     }

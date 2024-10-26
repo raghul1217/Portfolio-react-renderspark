@@ -35,7 +35,8 @@
 .home-left h5 {
     font-size: 22px;
     color: var(--optional);
-    padding: 5px 0px;
+    padding: 0;
+    margin: 0;
     font-weight: 500;
 }
 
@@ -159,6 +160,16 @@
         height: auto;
     }
 
+    .home-buttons{
+        justify-content: center;
+    }
+
+    .contact-icons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     .home-left {
         order: 2;
     }
@@ -166,14 +177,20 @@
     .home-right {
         order: 1;
         margin-bottom: 20px;
+        padding-right: 0;
     }
 
     .home-left h1 {
-        font-size: 28px;
+        font-size: 30px;
+        padding-bottom: 8px;
     }
 
     .home-left h5 {
-        font-size: 18px;
+        font-size: 16px;
+        width: 60%;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .home-left p {
@@ -182,7 +199,8 @@
 
     .download-btn {
         font-size: 14px;
-        padding: 10px 25px;
+        padding: 12px 25px;
+        border-radius: 40px;
     }
 
     .img-box {
