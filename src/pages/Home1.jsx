@@ -13,6 +13,8 @@ import boxicons from "boxicons";
 import "boxicons/css/boxicons.min.css";
 import '../styles/home1.css';
 import Skills from "../components/Skills";
+import ProjectSection from "../components/ProjectSection";
+import Contact from "../components/Contact";
 
 const Home1 = () => {
 
@@ -72,7 +74,8 @@ const Home1 = () => {
         </div>
         </div>
         <Skills/>
-        
+        <ProjectSection/>
+        <Contact/>
     </>
   )
 }
