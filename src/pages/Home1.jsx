@@ -19,7 +19,7 @@ import Contact from "../components/Contact";
 const Home1 = () => {
 
     const handleDownloadCV = () => {
-        window.open("/cv.pdf", "_blank");
+        window.open("./Raghul R.pdf", "_blank");
       };
 
 
@@ -41,17 +41,17 @@ const Home1 = () => {
                   </a>
                 </div>
                 <div className="icon">
-                  <a href="https://github.com/your-profile" target="_blank" rel="noopener noreferrer" className="banner-icons">
+                  <a href="https://github.com/raghul1217" target="_blank" rel="noopener noreferrer" className="banner-icons">
                   <i class='bx bxl-github' ></i>
                   </a>
                 </div>
                 <div className="icon">
-                  <a href="https://instagram.com/your-profile" target="_blank" rel="noopener noreferrer" className="banner-icons">
+                  <a href="https://www.instagram.com/heart_hackeri5" target="_blank" rel="noopener noreferrer" className="banner-icons">
                   <i class='bx bxl-instagram' ></i>
                   </a>
                 </div>
                 <div className="icon">
-                  <a href="https://wa.me/your-number" target="_blank" rel="noopener noreferrer" className="banner-icons">
+                  <a href="https://wa.me/9345546946" target="_blank" rel="noopener noreferrer" className="banner-icons">
                   <i class='bx bxl-whatsapp'></i>
                   </a>
                 </div>

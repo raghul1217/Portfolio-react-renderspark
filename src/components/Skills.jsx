@@ -11,10 +11,10 @@ const Skills = () => {
             { name: "Tailwind", level: 70 }
         ],
         backend: [
-            { name: "Node.js", level: 80 },
-            { name: "Express.js", level: 75 },
-            { name: "MongoDB", level: 70 },
-            { name: "MySQL", level: 65 }
+            { name: "MongoDB", level: 80 },
+            { name: "MySQL", level: 75 },
+            { name: "Node.js", level: 65 },
+            { name: "Express.js", level: 65 }
         ],
         design: [
             { name: "Figma", level: 85 },
@@ -31,7 +31,7 @@ const Skills = () => {
     const [selectedCategory, setSelectedCategory] = useState('frontend');
 
     return (
-        <div className="skills-section">
+        <div className="skills-section" id='skillsid'>
             <h1 className="overall-heading">My <span>Skills</span></h1>
             <div className="skills-container">
                 <div className="skills-buttons-container">

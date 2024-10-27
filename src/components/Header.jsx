@@ -22,10 +22,10 @@ const Header = () => {
         <div className="brand">Render<span>Spark.</span></div>
         <div className="sci">
         <ul className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
-          <li><a href="">Home</a></li>
-          <li><a href="">Projects</a></li>
-          <li><a href="">Skills</a></li>
-          <li><a href="">Contact</a></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#projectid">Projects</a></li>
+          <li><a href="#skillsid">Skills</a></li>
+          <li><a href="#contactid">Contact</a></li>
         </ul>
         </div>
         <div className="menu-icon" onClick={toggleMenu}>
