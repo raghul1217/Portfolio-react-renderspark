@@ -19,3 +19,7 @@
     --text-color: #ffffff;
     --bg1: #282c34;
 }
+
+html{
+  scroll-behavior: smooth;
+}
