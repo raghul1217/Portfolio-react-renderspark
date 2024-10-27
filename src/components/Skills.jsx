@@ -6,8 +6,8 @@ const Skills = () => {
         frontend: [
             { name: "HTML", level: 90 },
             { name: "CSS", level: 85 },
-            { name: "JavaScript", level: 80 },
-            { name: "React", level: 75 },
+            { name: "JavaScript", level: 75 },
+            { name: "React", level: 80 },
             { name: "Tailwind", level: 70 }
         ],
         backend: [
@@ -16,14 +16,21 @@ const Skills = () => {
             { name: "Node.js", level: 65 },
             { name: "Express.js", level: 65 }
         ],
+        Testing: [
+            { name: "Postman", level: 80 },
+            { name: "ThunderClient", level: 75 },
+            { name: "Vercel", level: 65 },
+            { name: "Netlify", level: 65 }
+        ],
         design: [
-            { name: "Figma", level: 85 },
-            { name: "Photoshop", level: 70 },
-            { name: "Canva", level: 80 }
+            { name: "Figma", level: 90 },
+            { name: "Canva", level: 85 },
+            { name: "AdobXd", level: 65 },
+            { name: "Photoshop", level: 60 }, 
         ],
         other: [
-            { name: "Git", level: 75 },
-            { name: "Agile Methodology", level: 80 },
+            { name: "Git & Github", level: 85 },
+            { name: "Type Writing", level: 80 },
             { name: "Communication", level: 85 }
         ]
     };
