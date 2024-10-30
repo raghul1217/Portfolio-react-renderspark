@@ -16,6 +16,12 @@ const Skills = () => {
             { name: "Node.js", level: 65 },
             { name: "Express.js", level: 65 }
         ],
+        Programming: [
+            { name: "Java", level: 80 },
+            { name: "Python", level: 70 },
+            { name: "C++", level: 60 },
+            { name: "C", level: 60 }
+        ],
         Testing: [
             { name: "Postman", level: 80 },
             { name: "ThunderClient", level: 75 },

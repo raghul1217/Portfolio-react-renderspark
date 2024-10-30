@@ -1,8 +1,23 @@
 import React from 'react';
 import 'boxicons/css/boxicons.min.css';
 import '../styles/contact.css';
+import emailjs from 'emailjs-com';
 
 const Contact = () => {
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm('service_6k3y8i2', 'template_1ck56w7', e.target, 'NwRwKi3HKwJUJAGMl')
+            .then((result) => {
+                alert("Message sent successfully!");
+                console.log(result.text);
+            }, (error) => {
+                alert("Failed to send the message, please try again.");
+                console.log(error.text);
+            });
+        e.target.reset(); // Reset form after submission
+    };
+
     return (
         <div className="contact-section" id='contactid'>
             <h2 className="section-heading">Contact <span>Me</span></h2>
@@ -17,10 +32,10 @@ const Contact = () => {
                 </div>
                 <div className="contact-form">
                     <h3>Send Me a <span>Message</span></h3>
-                    <form>
-                        <input type="text" placeholder="Name" required />
-                        <input type="email" placeholder="Email" required />
-                        <textarea placeholder="Message" rows="4" required></textarea>
+                    <form onSubmit={sendEmail}>
+                        <input type="text" name="name" placeholder="Name" required />
+                        <input type="email" name="email" placeholder="Email" required />
+                        <textarea name="message" placeholder="Message" rows="4" required></textarea>
                         <button type="submit">Send Message</button>
                     </form>
                 </div>
