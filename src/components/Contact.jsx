@@ -7,7 +7,7 @@ const Contact = () => {
     const sendEmail = (e) => {
         e.preventDefault();
 
-        emailjs.sendForm('service_6k3y8i2', 'template_1ck56w7', e.target, 'NwRwKi3HKwJUJAGMl')
+        emailjs.sendForm('service_y42pnao', 'template_1ck56w7', e.target, 'NwRwKi3HKwJUJAGMl')
             .then((result) => {
                 alert("Message sent successfully!");
                 console.log(result.text);
@@ -33,8 +33,8 @@ const Contact = () => {
                 <div className="contact-form">
                     <h3>Send Me a <span>Message</span></h3>
                     <form onSubmit={sendEmail}>
-                        <input type="text" name="name" placeholder="Name" required />
-                        <input type="email" name="email" placeholder="Email" required />
+                        <input type="text" name="from_name" placeholder="Name" required />
+                        <input type="email" name="from_email" placeholder="Email" required />
                         <textarea name="message" placeholder="Message" rows="4" required></textarea>
                         <button type="submit">Send Message</button>
                     </form>

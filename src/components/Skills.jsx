@@ -22,17 +22,17 @@ const Skills = () => {
             { name: "C++", level: 60 },
             { name: "C", level: 60 }
         ],
-        Testing: [
+        "API-Testing": [
             { name: "Postman", level: 80 },
             { name: "ThunderClient", level: 75 },
             { name: "Vercel", level: 65 },
             { name: "Netlify", level: 65 }
         ],
-        design: [
+        "UI/UX": [
             { name: "Figma", level: 90 },
             { name: "Canva", level: 85 },
-            { name: "AdobXd", level: 65 },
-            { name: "Photoshop", level: 60 }, 
+            { name: "AdobeXd", level: 65 },
+            { name: "Photoshop", level: 60 }
         ],
         other: [
             { name: "Git & Github", level: 85 },
@@ -42,6 +42,15 @@ const Skills = () => {
     };
 
     const [selectedCategory, setSelectedCategory] = useState('frontend');
+
+    const icons = {
+        frontend: 'bx bx-code',
+        backend: 'bx bx-server',
+        Programming: 'bx bx-terminal',
+        "API-Testing": 'bx bx-cloud-download',
+        "UI/UX": 'bx bx-paint',
+        other: 'bx bx-cog'
+    };
 
     return (
         <div className="skills-section" id='skillsid'>
@@ -55,6 +64,7 @@ const Skills = () => {
                                 className={selectedCategory === category ? 'active' : ''}
                                 onClick={() => setSelectedCategory(category)}
                             >
+                                <i className={icons[category]}></i>
                                 {category.charAt(0).toUpperCase() + category.slice(1)}
                             </button>
                         ))}
@@ -71,10 +81,10 @@ const Skills = () => {
                             <div className="skill" key={skill.name}>
                                 <div className="skill-title">
                                     <div>
-                                    {skill.name}
+                                        {skill.name}
                                     </div>
                                     <div>
-                                    {skill.level}%
+                                        {skill.level}%
                                     </div>
                                 </div>
                                 <div className="progress-bar">

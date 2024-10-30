@@ -49,22 +49,27 @@ body {
     grid-template-columns: repeat(2, 1fr); /* Two buttons per row */
     gap: 20px;
     justify-items: center;
-    border: none;
-    outline: none;
 }
 
 .skills-buttons button {
     color: var(--highlight-color);
     font-size: 18px;
-    padding: 18px 45px;
+    padding: 18px 0;
     cursor: pointer;
     border-radius: 5px;
     width: 100%;
     background: var(--bg2);
     transition: 0.3s, color 0.3s, transform 0.3s;
     box-shadow: 0px 4px 10px rgba(26, 28, 26, 0.4);
-    outline: none;
     border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.skills-buttons button i {
+    font-size: 20px; /* Adjust icon size */
 }
 
 .skills-buttons button:hover,
@@ -144,12 +149,12 @@ body {
     }
 
     .skills-buttons {
-        grid-template-columns: repeat(2, 1fr); /* One button per row */
+        grid-template-columns: repeat(2, 1fr); /* Two buttons per row */
     }
 
     .skills-buttons button {
         font-size: 16px;
-        padding: 12px 20px;
+        padding: 12px 0;
     }
 
     .skills-display-container {
