@@ -36,7 +36,7 @@ const Home1 = () => {
             <div className="home-buttons">
               <div className="contact-icons">
                 <div className="icon">
-                  <a href="https://linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer"  className="banner-icons">
+                  <a href="https://www.linkedin.com/in/raghul-ram/" target="_blank" rel="noopener noreferrer"  className="banner-icons">
                   <i class='bx bxl-linkedin'></i>
                   </a>
                 </div>
