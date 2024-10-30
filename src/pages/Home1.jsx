@@ -1,15 +1,8 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faLinkedinIn,
-  faGithub,
-  faInstagram,
-  faWhatsapp,
-} from "@fortawesome/free-brands-svg-icons";
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
 import Header from '../components/Header'
 import profile2 from '../assets/profile2.png';
-import boxicons from "boxicons";
 import "boxicons/css/boxicons.min.css";
 import '../styles/home1.css';
 import Skills from "../components/Skills";
@@ -19,7 +12,7 @@ import Contact from "../components/Contact";
 const Home1 = () => {
 
     const handleDownloadCV = () => {
-        window.open("./Raghul R.pdf", "_blank");
+        window.open("./Raghul.pdf", "_blank");
       };
 
 
