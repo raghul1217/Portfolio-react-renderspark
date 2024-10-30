@@ -116,8 +116,21 @@ body {
     font-weight: 600;
     margin-bottom: 5px;
     display: flex;
+    align-items: center;
     justify-content: space-between;
     text-align: left;
+    gap: 10px;
+}
+
+.skill-icon {
+    font-size: 20px;
+    color: var(--highlight-color);
+}
+
+.skill-name{
+    display: flex;
+    text-align: left;
+    gap: 8px;
 }
 
 .progress-bar {

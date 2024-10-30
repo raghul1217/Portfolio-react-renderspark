@@ -1,43 +1,44 @@
 import React, { useState } from 'react';
 import '../styles/skills.css';
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
 const Skills = () => {
     const skillsData = {
         frontend: [
-            { name: "HTML", level: 90 },
-            { name: "CSS", level: 85 },
-            { name: "JavaScript", level: 75 },
-            { name: "React", level: 80 },
-            { name: "Tailwind", level: 70 }
+            { name: "HTML", level: 90, icon: "fab fa-html5" },
+            { name: "CSS", level: 85, icon: "fab fa-css3-alt" },
+            { name: "JavaScript", level: 75, icon: "fab fa-js" },
+            { name: "React", level: 80, icon: "fab fa-react" },
+            { name: "Tailwind", level: 70, icon: "fas fa-wind" }
         ],
         backend: [
-            { name: "MongoDB", level: 80 },
-            { name: "MySQL", level: 75 },
-            { name: "Node.js", level: 65 },
-            { name: "Express.js", level: 65 }
+            { name: "MongoDB", level: 80, icon: "fas fa-database" },
+            { name: "MySQL", level: 75, icon: "fas fa-database" },
+            { name: "Node.js", level: 65, icon: "fab fa-node-js" },
+            { name: "Express.js", level: 65, icon: "fas fa-server" }
         ],
         Programming: [
-            { name: "Java", level: 80 },
-            { name: "Python", level: 70 },
-            { name: "C++", level: 60 },
-            { name: "C", level: 60 }
+            { name: "Java", level: 80, icon: "fab fa-java" },
+            { name: "Python", level: 70, icon: "fab fa-python" },
+            { name: "C++", level: 60, icon: "fas fa-code" },
+            { name: "C", level: 60, icon: "fas fa-code" }
         ],
         "API-Testing": [
-            { name: "Postman", level: 80 },
-            { name: "ThunderClient", level: 75 },
-            { name: "Vercel", level: 65 },
-            { name: "Netlify", level: 65 }
+            { name: "Postman", level: 80, icon: "fas fa-cloud-download-alt" },
+            { name: "ThunderClient", level: 75, icon: "fas fa-bolt" },
+            { name: "Vercel", level: 80, icon: "fas fa-rocket" },
+            { name: "Netlify", level: 80, icon: "fas fa-cloud" }
         ],
         "UI/UX": [
-            { name: "Figma", level: 90 },
-            { name: "Canva", level: 85 },
-            { name: "AdobeXd", level: 65 },
-            { name: "Photoshop", level: 60 }
+            { name: "Figma", level: 90, icon: "fab fa-figma" },
+            { name: "Canva", level: 85, icon: "fas fa-paint-brush" },
+            { name: "AdobeXd", level: 65, icon: "fas fa-paint-brush" },
+            { name: "Photoshop", level: 60, icon: "fas fa-paint-brush" }
         ],
         other: [
-            { name: "Git & Github", level: 85 },
-            { name: "Type Writing", level: 80 },
-            { name: "Communication", level: 85 }
+            { name: "Git & Github", level: 85, icon: "fab fa-github" },
+            { name: "Type Writing", level: 80, icon: "fas fa-keyboard" },
+            { name: "Communication", level: 80, icon: "fas fa-comments" }
         ]
     };
 
@@ -80,8 +81,10 @@ const Skills = () => {
                         {skillsData[selectedCategory].map(skill => (
                             <div className="skill" key={skill.name}>
                                 <div className="skill-title">
-                                    <div>
-                                        {skill.name}
+                                    
+                                    <div className='skill-name'>
+                                    <i className={`${skill.icon} skill-icon`}></i>
+                                    {skill.name}
                                     </div>
                                     <div>
                                         {skill.level}%
@@ -91,9 +94,7 @@ const Skills = () => {
                                     <div 
                                         className="progress-bar-fill" 
                                         style={{ width: `${skill.level}%` }}
-                                    >
-                                        {skill.level}%
-                                    </div>
+                                    ></div>
                                 </div>
                             </div>
                         ))}
