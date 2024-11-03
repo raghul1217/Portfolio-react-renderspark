@@ -9,7 +9,7 @@
     background-color: var(--bg-color);
     color: var(--text-color);
     margin-bottom: 50px;
-    margin-top: 80px;
+    padding-top: 40px;
 }
 
 .section-heading {
@@ -20,6 +20,10 @@
 
 .section-heading span {
     color: var(--highlight-color);
+}
+
+.project-section h1{
+    margin-bottom: 40px;
 }
 
 .projects-container {
@@ -104,8 +108,13 @@
         margin-bottom: 0px;
     }
 
+    .project-section h1{
+        margin-bottom: 5px;
+    }
+
     .section-heading{
-        margin-top: 50px;
+        margin: 5px 0px;
+        margin-bottom: 0px;
     }
 
 }

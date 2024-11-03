@@ -8,6 +8,7 @@ import '../styles/home1.css';
 import Skills from "../components/Skills";
 import ProjectSection from "../components/ProjectSection";
 import Contact from "../components/Contact";
+import Footer from "../components/Footer";
 
 const Home1 = () => {
 
@@ -69,6 +70,7 @@ const Home1 = () => {
         <Skills/>
         <ProjectSection/>
         <Contact/>
+        <Footer/>
     </>
   )
 }

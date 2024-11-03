@@ -27,7 +27,7 @@ const Contact = () => {
                     <div className="c-info">
                         <p><i className='bx bxs-phone' /> +91 9345546946</p>
                         <p><i className='bx bxs-envelope' /> raghulramakrishnan2004@gmail.com</p>
-                        <p><i className='bx bxs-map' /> Sengattu Colony, Cuddalore-607402</p>
+                        <p><i className='bx bxs-map' />Sengai nagar, Reddichavadi, Cuddalore-607402</p>
                     </div>
                 </div>
                 <div className="contact-form">
@@ -40,9 +40,6 @@ const Contact = () => {
                     </form>
                 </div>
             </div>
-            <footer className="footer">
-                &copy; {new Date().getFullYear()} RenderSpark. All rights reserved.
-            </footer>
         </div>
     );
 };
