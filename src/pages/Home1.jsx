@@ -13,7 +13,7 @@ import Footer from "../components/Footer";
 const Home1 = () => {
 
     const handleDownloadCV = () => {
-        window.open("./Raghul.pdf", "_blank");
+        window.open("./Raghul R-2.pdf", "_blank");
       };
 
 
