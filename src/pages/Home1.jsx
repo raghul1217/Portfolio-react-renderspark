@@ -9,6 +9,7 @@ import Skills from "../components/Skills";
 import ProjectSection from "../components/ProjectSection";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
+// import Internship from "../components/Internship";
 
 const Home1 = () => {
 
@@ -40,7 +41,7 @@ const Home1 = () => {
                   </a>
                 </div>
                 <div className="icon">
-                  <a href="https://www.instagram.com/heart_hackeri5" target="_blank" rel="noopener noreferrer" className="banner-icons">
+                  <a href="https://www.instagram.com/raghul_ramm" target="_blank" rel="noopener noreferrer" className="banner-icons">
                   <i class='bx bxl-instagram' ></i>
                   </a>
                 </div>
@@ -69,6 +70,7 @@ const Home1 = () => {
         </div>
         <Skills/>
         <ProjectSection/>
+        {/* <Internship/> */}
         <Contact/>
         <Footer/>
     </>
