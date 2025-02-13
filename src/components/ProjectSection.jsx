@@ -1,60 +1,89 @@
-import React from 'react';
-import '../styles/projectSection.css';
-import project1 from '../assets/project1.png';
-import project2 from '../assets/project2.png';
-import figma2 from '../assets/figma2.png';
+import React from "react";
+import "../styles/projectSection.css";
+import project2 from "../assets/project2.png";
+import grocery from "../assets/grocery.png";
+import museum from "../assets/museum.jpg";
 
 const ProjectSection = () => {
-    const projects = [
-        {
-            title: "Website for Symposium",
-            subtitle: "Realtime Project | MERN Stack",
-            image: project1,
-            tools: ["React", "MongoDB", "Node", "Express", "JWT", "Vercel"],
-            liveLink: "https://progeni25.vercel.app/",
-            description: "Developed a comprehensive website for my college symposium, enabling seamless online registration for students. The site includes JWT authentication for secure login and registration, a dedicated profile page for each user, and a QR code scanner for payment verification. Google Forms was integrated for streamlined registration and data management."
-        },
-        {
-            title: "UI design for youtuber",
-            subtitle: "Realtime Project | Figma design",
-            image: figma2,
-            tools: ["Figma", "Unsplash"],
-            liveLink: "https://www.figma.com/design/J2w0M341gDQDaVyXvwTyVG/Youtuber-Design?node-id=0-1&t=4XkPFc0d1hWf30UK-1",
-            description: "Designed a user interface in Figma for a YouTuber specializing in movie reviews. The goal was to create a website where he could feature his YouTube content. I took on the role of UI designer, focusing on a clean, modern aesthetic to showcase his videos and enhance user engagement."
-        },
-        {
-            title: "E-Products shopping",
-            subtitle: "MERN Stack",
-            image: project2,
-            tools: ["React", "Node", "Express", "Tailwind", "Cloudinary", "MongoDB", "Vercel"],
-            liveLink: "https://digi-frontend-bay.vercel.app",
-            description: "Developed a shopping cart website to enhance my MERN stack skills, focusing on full CRUD operations for product management. The site includes features for adding, updating, and deleting products, with a dedicated admin page for streamlined product management and editing."
-        },
-    ];
+  const projects = [
+    {
+      title: "Modern Ecommerce Website",
+      subtitle: "REACT",
+      image: grocery,
+      tools: ["React", "Removebg", "Framer motion", "Vercel"],
+      liveLink: "https://algomox-groceryshop-3z7i.vercel.app/",
+      github: "https://github.com/raghul1217/Algomox-Groceryshop",
+      description:
+        "A sleek e-commerce platform with a modern design, dynamic cart and wishlist, robust filters, and a budget tracker for a seamless shopping experience.",
+    },
+    {
+      title: "E-Products shopping",
+      subtitle: "MERN Stack",
+      image: project2,
+      tools: [
+        "React",
+        "Node",
+        "Express",
+        "Tailwind",
+        "Cloudinary",
+        "MongoDB",
+        "Vercel",
+      ],
+      liveLink: "https://digi-frontend-bay.vercel.app",
+      github: "https://github.com/raghul1217/Project_expo_stripe?tab=readme-ov-file",
+      description: "Developed a MERN stack shopping cart website with full CRUD functionality, featuring an admin panel for efficient product management, editing, and updates."
+    },
+    {
+      title: "Museum UI design",
+      subtitle: "Realtime Project | Figma design",
+      image: museum,
+      tools: ["Figma", "Unsplash", "Iconify"],
+      liveLink:
+        "https://www.figma.com/design/TRea6h6M2UKkwBtAkDVr5V/REVIVE24-MUSEUM?node-id=0-1&t=Wo5140NiCp6dVTXU-1",
+      github: "https://www.figma.com/design/TRea6h6M2UKkwBtAkDVr5V/REVIVE24-MUSEUM?node-id=0-1&t=Wo5140NiCp6dVTXU-1",
+      description:
+        "Designed a modern UI in Figma for a museum website, focusing on showcasing the mulitple events and historical statues and conducting virtual tours.",
+    },
+  ];
 
-    return (
-        <div className="project-section" id='projectid'>
-            <h1 className="section-heading">My <span>Projects</span></h1>
-            <div className="projects-container">
-                {projects.map((project, index) => (
-                    <div className="project-card" key={index}>
-                        <img src={project.image} alt={project.title} className="project-image" />
-                        <div className="project-info">
-                            <p className="project-title">{project.title}</p>
-                            <p className='project-subtitle'>{project.subtitle}</p>
-                            <p className="project-description">{project.description}</p>
-                            <a href={project.liveLink} target="_blank" rel="noopener noreferrer" className="live-link">
-                                View Live🔗
-                            </a>
-                            <div className="tools-used">
-                                {project.tools.join(", ")}
-                            </div>
-                        </div>
-                    </div>
-                ))}
+  return (
+    <div className="project-section" id="projectid">
+      <h1 className="section-heading">
+        My <span>Projects</span>
+      </h1>
+      <div className="projects-container">
+        {projects.map((project, index) => (
+          <div className="project-card" key={index}>
+            <img
+              src={project.image}
+              alt={project.title}
+              className="project-image"
+            />
+            <div className="project-info">
+              <p className="project-title">{project.title}</p>
+              <p className="project-subtitle">{project.subtitle}</p>
+              <p className="project-description">{project.description}</p>
+              <div className="project-card-bottom">
+              <a
+                href={project.liveLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="live-link"
+              >
+                <i className="fas fa-eye eye"></i> Preview
+              </a>
+              <a href={project.github} target="_blank" className="github-code">
+                <i class="fab fa-github git"></i> Code
+              </a>
+              </div>
+
+              <div className="tools-used">{project.tools.join(", ")}</div>
             </div>
-        </div>
-    );
+          </div>
+        ))}
+      </div>
+    </div>
+  );
 };
 
 export default ProjectSection;

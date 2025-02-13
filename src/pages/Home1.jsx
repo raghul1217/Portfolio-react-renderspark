@@ -9,6 +9,7 @@ import Skills from "../components/Skills";
 import ProjectSection from "../components/ProjectSection";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
+import WorkSection from "../components/Worksection";
 // import Internship from "../components/Internship";
 
 const Home1 = () => {
@@ -69,12 +70,14 @@ const Home1 = () => {
         </div>
         </div>
         <Skills/>
+        <WorkSection/>
         <ProjectSection/>
         {/* <Internship/> */}
         <Contact/>
         <Footer/>
     </>
   )
+  
 }
 
 export default Home1
