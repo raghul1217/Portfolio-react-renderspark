@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useEffect }  from "react";
 import "../styles/projectSection.css";
 import project2 from "../assets/project2.png";
 import grocery from "../assets/grocery.png";
 import museum from "../assets/museum.jpg";
+import ScrollReveal from "scrollreveal";
 
 const ProjectSection = () => {
   const projects = [
@@ -46,6 +47,24 @@ const ProjectSection = () => {
     },
   ];
 
+  useEffect(() => {
+    const sr = ScrollReveal({
+      origin: "bottom",
+      distance: "40px",
+      duration: 1000,
+      delay: 300,
+      easing: "cubic-bezier(0.5, 0, 0, 1)",
+      reset: true,
+      beforeReveal: (el) => {
+        el.style.transform = "none"; 
+      },
+    });
+
+    sr.reveal(".project-card", { interval: 250 });
+
+    return () => sr.destroy(); 
+  }, []);
+
   return (
     <div className="project-section" id="projectid">
       <h1 className="section-heading">
@@ -77,7 +96,7 @@ const ProjectSection = () => {
               </a>
               </div>
 
-              <div className="tools-used">{project.tools.join(", ")}</div>
+              {/* <div className="tools-used">{project.tools.join(", ")}</div> */}
             </div>
           </div>
         ))}

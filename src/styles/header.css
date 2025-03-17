@@ -76,12 +76,18 @@ body {
     .navbar-bg{
         padding-top: 10px;
     }
+
+    .brand{
+        font-size: 20px;
+        font-weight: 500;
+    }
     
     .nav-links {
         display: none; /* Hide links by default */
         position: absolute;
-        top: 60px;
-        right: 20px;
+        top: 38px;
+        right: 5px;
+        left: 5px;
         flex-direction: column;
         gap: 10px;
         background-color: var(--background);
@@ -90,13 +96,12 @@ body {
         z-index: 100;
     }
 
-    .brand{
-        font-size: 20px;
-        font-weight: 500;
-    }
-
     .nav-links.active {
-        display: flex; /* Show menu when active */
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        transition: cubic-bezier(0.075, 0.82, 0.165, 1);
     }
 
     .menu-icon {

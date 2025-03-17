@@ -74,7 +74,7 @@ const WorkSection = () => {
               </a>
               </div>
 
-              <div className="tools-used">{project.tools.join(", ")}</div>
+              {/* <div className="tools-used">{project.tools.join(", ")}</div> */}
             </div>
           </div>
         ))}

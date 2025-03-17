@@ -1,0 +1,146 @@
+body {
+  background-color: rgb(12, 19, 30);
+  padding: 0px 80px;
+}
+
+.home-container {
+  background-color: rgb(12, 19, 30);
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+.home-container .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+.home-container .navbar .brand {
+  font-size: 24px;
+  font-weight: 500;
+}
+.home-container .navbar .menu-icon {
+  display: none;
+  cursor: pointer;
+}
+.home-container .navbar .nav-contents {
+  display: flex;
+  gap: 50px;
+}
+.home-container .navbar .nav-contents ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+.home-container .navbar .nav-contents a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+.home-container .navbar .nav-contents .nav-btn .nav-connect-btn {
+  padding: 7px 16px;
+  background: linear-gradient(180deg, rgb(0, 255, 195), rgb(0, 140, 255));
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.home-container .navbar .nav-contents.open {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  background-color: rgb(12, 19, 30);
+  width: 100%;
+  padding: 20px;
+  z-index: 1;
+}
+.home-container .home-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80vh;
+}
+.home-container .home-content .home-left {
+  flex: 1;
+  padding: 20px;
+}
+.home-container .home-content .home-left h1 {
+  font-size: 36px;
+}
+.home-container .home-content .home-left h5 {
+  font-size: 18px;
+  color: rgb(0, 255, 195);
+}
+.home-container .home-content .home-left p {
+  width: 85%;
+  padding-bottom: 16px;
+}
+.home-container .home-content .home-left .home-buttons {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+.home-container .home-content .home-left .home-buttons .contact-icons {
+  display: flex;
+  gap: 16px;
+}
+.home-container .home-content .home-left .home-buttons .contact-icons .icon {
+  background: linear-gradient(180deg, rgb(0, 255, 195), rgb(0, 140, 255));
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.home-container .home-content .home-left .home-buttons .contact-icons a {
+  color: rgb(12, 19, 30);
+}
+.home-container .home-content .home-left .home-buttons .download-btn {
+  padding: 10px 20px;
+  background: linear-gradient(180deg, rgb(0, 255, 195), rgb(0, 140, 255));
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.home-container .home-content .home-img-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home-container .home-content .home-img-div .profile1 {
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 0 20px;
+  }
+  .navbar .menu-icon {
+    display: block;
+  }
+  .navbar .nav-contents {
+    display: none; /* Hide the nav by default */
+  }
+  .home-content {
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+  }
+  .home-content .home-img-div {
+    order: 1; /* Show the profile first on mobile */
+  }
+  .home-content .home-left {
+    order: 2;
+    width: 100%;
+  }
+  .home-content h1 {
+    font-size: 30px;
+  }
+  .home-content h5 {
+    font-size: 16px;
+  }
+}/*# sourceMappingURL=home.css.map */
