@@ -10,6 +10,7 @@ import ProjectSection from "../components/ProjectSection";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 import WorkSection from "../components/Worksection";
+import DesignCarousel from "../components/DesignCarousel";
 // import Internship from "../components/Internship";
 
 const Home1 = () => {
@@ -73,6 +74,7 @@ const Home1 = () => {
         <WorkSection/>
         <ProjectSection/>
         {/* <Internship/> */}
+        <DesignCarousel/>
         <Contact/>
         <Footer/>
     </>
