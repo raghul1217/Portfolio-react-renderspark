@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
-import { faFigma } from '@fortawesome/free-brands-svg-icons';
+import { faFigma } from "@fortawesome/free-brands-svg-icons";
 import Header from "../components/Header";
 import profile2 from "../assets/profile2.png";
 import "boxicons/css/boxicons.min.css";
@@ -23,8 +23,6 @@ const Home1 = () => {
     <>
       <Header />
       <div className="home-content">
-
-
         <div className="home-left">
           <h1>Hi, I'm Raghul Ramakrishnan</h1>
           <h5>MERN Stack Developer | UI/UX Designer</h5>
@@ -34,7 +32,6 @@ const Home1 = () => {
             Focused on delivering intuitive, high-quality solutions, I'm eager
             to bring fresh perspectives to a dynamic team.
           </p>
-
 
           <div className="home-buttons">
             <div className="contact-icons">
@@ -92,15 +89,23 @@ const Home1 = () => {
 
             <div className="combine-homebtn">
               <div className="home-download-cv">
-              <button onClick={handleDownloadCV} className="download-btn">
-                <FontAwesomeIcon icon={faDownload} /> Download CV
-              </button>
-            </div>
-            <div className="home-download-cv">
-              <button onClick={handleDownloadCV} className="download-btn1">
-                <FontAwesomeIcon icon={faFigma} className="figma-icon"/> Figma Designs
-              </button>
-            </div>
+                <button onClick={handleDownloadCV} className="download-btn">
+                  <FontAwesomeIcon icon={faDownload} /> Download CV
+                </button>
+              </div>
+              <div className="home-download-cv">
+                
+                  <a
+                    href="https://www.figma.com/@renderspark"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="download-btn1"
+                  >
+                    <FontAwesomeIcon icon={faFigma} className="figma-icon" />{" "}
+                    Figma Designs
+                  </a>
+                
+              </div>
             </div>
           </div>
         </div>
