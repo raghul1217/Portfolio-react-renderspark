@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
+import { faFigma } from '@fortawesome/free-brands-svg-icons';
 import Header from "../components/Header";
 import profile2 from "../assets/profile2.png";
 import "boxicons/css/boxicons.min.css";
@@ -22,6 +23,8 @@ const Home1 = () => {
     <>
       <Header />
       <div className="home-content">
+
+
         <div className="home-left">
           <h1>Hi, I'm Raghul Ramakrishnan</h1>
           <h5>MERN Stack Developer | UI/UX Designer</h5>
@@ -31,6 +34,8 @@ const Home1 = () => {
             Focused on delivering intuitive, high-quality solutions, I'm eager
             to bring fresh perspectives to a dynamic team.
           </p>
+
+
           <div className="home-buttons">
             <div className="contact-icons">
               <div className="icon">
@@ -73,7 +78,7 @@ const Home1 = () => {
                   <i class="bx bxl-whatsapp"></i>
                 </a>
               </div>
-              <div className="icon">
+              {/* <div className="icon">
                 <a
                   href="https://www.figma.com/@renderspark"
                   target="_blank"
@@ -82,19 +87,21 @@ const Home1 = () => {
                 >
                   <i class="bx bxl-figma"></i>
                 </a>
-              </div>
+              </div> */}
             </div>
 
-            <div className="home-download-cv">
+            <div className="combine-homebtn">
+              <div className="home-download-cv">
               <button onClick={handleDownloadCV} className="download-btn">
                 <FontAwesomeIcon icon={faDownload} /> Download CV
               </button>
             </div>
-            {/* <div className="home-download-cv">
-              <button onClick={handleDownloadCV} className="download-btn">
-                <FontAwesomeIcon icon={faDownload} /> Download CV
+            <div className="home-download-cv">
+              <button onClick={handleDownloadCV} className="download-btn1">
+                <FontAwesomeIcon icon={faFigma} className="figma-icon"/> Figma Designs
               </button>
-            </div> */}
+            </div>
+            </div>
           </div>
         </div>
 

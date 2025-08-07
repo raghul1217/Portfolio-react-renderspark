@@ -55,12 +55,17 @@
     justify-content: left;
 }
 
+.combine-homebtn{
+    display: flex; 
+    gap: 20px;
+}
+
 .download-btn {
     background: var(--optional);
     color: #1f242d;
     padding: 12px 30px;
     border: 2px solid var(--optional);
-    border-radius: 40px;
+    border-radius: 5px;
     box-shadow: 0 0 10px var(--optional);
     font-size: 16px;
     cursor: pointer;
@@ -73,6 +78,27 @@
     background: transparent;
     color: var(--optional);
     box-shadow: none;
+}
+
+.download-btn1 {
+    background: transparent;
+    color: var(--optional);
+    padding: 12px 30px;
+    border: 2px solid var(--optional);
+    border-radius: 5px;
+    
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: .5s;
+    font-family: 'Montserrat', 'sans-serif';
+}
+
+.download-btn1:hover {
+    background: var(--optional);
+    color: #1f242d;
+    box-shadow: none;
+    box-shadow: 0 0 10px var(--optional);
 }
 
 .contact-icons {
@@ -152,6 +178,11 @@
     position: relative;
 }
 
+.figma-icon{
+    font-size: 17px;
+    font-weight: bold;
+}
+
 /* Responsive Styles */
 @media (max-width: 768px) {
     .home-content {
@@ -207,9 +238,21 @@
 
     .download-btn {
         font-size: 14px;
-        padding: 12px 25px;
-        border-radius: 40px;
+        padding: 12px 12px;
+        border-radius: 5px;
     }
+    .download-btn1 {
+        font-size: 14px;
+        padding: 12px 12px;
+        border-radius: 5px;
+    }
+
+    .combine-homebtn{
+    display: flex; 
+    justify-content: center;
+    /* flex-direction: column; */
+    gap: 10px;
+}
 
     .img-box {
         width: 200px;
